@@ -6,22 +6,9 @@ using System.Threading.Tasks;
 
 namespace _2013139171
 {
-    class Program
+    class Alimentacion : ServicioTuristico 
     {
-        static void Main(string[] args)
-        {
-          
-
-
-
-
-
-
-
-
-
-
-
-        }
+        
+        
     }
 }

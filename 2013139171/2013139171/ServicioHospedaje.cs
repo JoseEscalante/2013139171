@@ -6,22 +6,8 @@ using System.Threading.Tasks;
 
 namespace _2013139171
 {
-    class Program
+    class ServicioHospedaje
     {
-        static void Main(string[] args)
-        {
-          
-
-
-
-
-
-
-
-
-
-
-
-        }
+        public string Servicio { get; set; }
     }
 }

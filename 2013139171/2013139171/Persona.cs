@@ -6,22 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2013139171
 {
-    class Program
+    class Persona 
     {
-        static void Main(string[] args)
-        {
-          
-
-
-
-
-
-
-
-
-
-
-
-        }
     }
 }
