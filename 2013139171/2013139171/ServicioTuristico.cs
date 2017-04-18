@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace _2013139171
 {
-    class ServicioTuristico
+    public abstract class ServicioTuristico
     {
+        /*
+        public ServicioTuristico() {
+            // Code to initialize the class goes here.
+        }*/
+        
+        abstract public double obtenerPrecio();
     }
 }

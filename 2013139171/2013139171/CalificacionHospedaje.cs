@@ -6,30 +6,26 @@ using System.Threading.Tasks;
 
 namespace _2013139171
 {
-    class CalificacionHospedaje
+    public class CalificacionHospedaje
     {
 
-        private int _Calificacion;
-
-        public int Calificacion
+       public CalificacionHospedaje(string nombre, double factorPrecio)
         {
-            get
-            {
-                return _Calificacion;
-            }
-
-            set
-            {
-                if (value > 0)
-                    _Calificacion = value;
-            }
+            this.nombre = nombre;
+            this.factorPrecio = factorPrecio;
         }
+        
+        public int code { get; set; }
+        public string nombre { get; set; }
 
-        public CalificacionHospedaje(int califacion)
-        {
-            Calificacion = califacion;
-        }
+        //Califacion de estrellas del 1 al 5.
+        public short calificacionHospedaje { get; set; }
 
+        //Requerimientos para cumplir cada calificacion
+        public string descrip { get; set; }
+
+        //El factor que influye en precio final del hospedaje
+        public double factorPrecio { get; set; }
        
     }
 }

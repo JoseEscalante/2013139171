@@ -6,30 +6,18 @@ using System.Threading.Tasks;
 
 namespace _2013139171
 {
-    class CategoriaHospedaje
+    public class CategoriaHospedaje
     {
-        private string _Categoria;
-
-        public string Categoria
+        public CategoriaHospedaje(string nombre, double factorPrecio)
         {
-            get
-            {
-                return _Categoria;
-            }
-            set
-            {
-                _Categoria = value;
-            }
+            this.nombre = nombre;
+            this.factorPrecio = factorPrecio;
         }
 
-        public CategoriaHospedaje(string categoria)
-        {
-            Categoria = categoria;
-        }
-
-
-
+        public int code { get; set; }
+        public string nombre { get; set; }
+        public double factorPrecio { get; set; }
 
     }
 }
-}
+

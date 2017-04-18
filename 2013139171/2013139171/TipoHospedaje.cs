@@ -6,28 +6,21 @@ using System.Threading.Tasks;
 
 namespace _2013139171
 {
-    class TipoHospedaje
+    public class TipoHospedaje
     {
-        private string _TipoH;
-
-
-        public string TipoH
+       public TipoHospedaje(string nom, double facPrecio)
         {
-
-            get
-            {
-                return _TipoH;
-            }
-            set
-            {
-                _TipoH = value;
-            }
+            this.nombre = nom;
+            this.factorPrecio = facPrecio;
         }
 
-        public TipoHospedaje(string tipoH)
-        {
-            TipoH = tipoH;
-        }
+        public int code { get; set; }
+
+        //Hostal,Hotel,Backpacker ....
+        public string nombre { get; set; }
+        
+        //Factor que influye el precio final
+        public double factorPrecio { get; set; }
 
     }
 }

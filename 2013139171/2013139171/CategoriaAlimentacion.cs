@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace _2013139171
 {
-    class CategoriaAlimentacion
+    public class CategoriaAlimentacion
     {
+        public CategoriaAlimentacion(String nombre)
+        {
+            this.nombre = nombre;
+        }
 
-
-
+        public int code { get; set; }
+        public string nombre { get; set; }
+        public string descrip { get; set; }
 
 
     }
